@@ -26,9 +26,9 @@ fun AppNavHost(viewModel: OpenViewModel) {
             startDestination = "profile",
             modifier = Modifier.padding(padding)
         ) {
-            composable("profile") { ProfileScreen(viewModel) }
-            composable("actions") { ActionsScreen(viewModel) }
             composable("add") { AddActionScreen(viewModel) }
+            composable("actions") { ActionsScreen() }
+            composable("profile") { ProfileScreen(viewModel) }
         }
     }
 }

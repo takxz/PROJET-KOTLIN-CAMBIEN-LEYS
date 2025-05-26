@@ -11,7 +11,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val viewModel: OpenViewModel by viewModels()
-
         setContent {
             OpenapplicationTheme {
                 AppNavHost(viewModel)

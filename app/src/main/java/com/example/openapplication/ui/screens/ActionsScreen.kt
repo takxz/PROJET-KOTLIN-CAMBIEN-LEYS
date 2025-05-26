@@ -6,10 +6,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.openapplication.data.predefinedActionsByAxe
-import com.example.openapplication.viewmodel.OpenViewModel
 
 @Composable
-fun ActionsScreen(viewModel: OpenViewModel) {
+fun ActionsScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()

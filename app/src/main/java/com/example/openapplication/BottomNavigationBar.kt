@@ -16,10 +16,10 @@ fun BottomNavigationBar(navController: NavHostController) {
 
     NavigationBar {
         NavigationBarItem(
-            selected = currentRoute == "profile",
-            onClick = { navController.navigate("profile") },
-            label = { Text("Profil") },
-            icon = { Icon(Icons.Default.Person, contentDescription = null) }
+            selected = currentRoute == "add",
+            onClick = { navController.navigate("add") },
+            label = { Text("Ajouter") },
+            icon = { Icon(Icons.Default.Add, contentDescription = null) }
         )
         NavigationBarItem(
             selected = currentRoute == "actions",
@@ -28,10 +28,10 @@ fun BottomNavigationBar(navController: NavHostController) {
             icon = { Icon(Icons.Default.List, contentDescription = null) }
         )
         NavigationBarItem(
-            selected = currentRoute == "add",
-            onClick = { navController.navigate("add") },
-            label = { Text("Ajouter") },
-            icon = { Icon(Icons.Default.Add, contentDescription = null) }
+            selected = currentRoute == "profile",
+            onClick = { navController.navigate("profile") },
+            label = { Text("Profil") },
+            icon = { Icon(Icons.Default.Person, contentDescription = null) }
         )
     }
 }

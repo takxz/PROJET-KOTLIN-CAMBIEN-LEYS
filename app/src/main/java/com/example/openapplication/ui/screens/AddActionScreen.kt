@@ -47,7 +47,7 @@ fun AddActionScreen(viewModel: OpenViewModel) {
 
         Spacer(Modifier.height(16.dp))
 
-        Button(onClick = { justificatifUri = "file://dummy" }) {
+        Button(onClick = { justificatifUri = "file://bfreuihguierhguriyey" }) {
             Text("Uploader un justificatif")
         }
 
